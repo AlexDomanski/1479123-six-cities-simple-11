@@ -1,5 +1,10 @@
+import MainRender from "../../pages/main-render/main-render";
+
+
 function App(): JSX.Element {
-  return <p>Hello, world!</p>;
+  return (
+    <MainRender />
+  );
 }
 
 export default App;
