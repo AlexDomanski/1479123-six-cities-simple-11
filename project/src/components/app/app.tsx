@@ -1,9 +1,9 @@
-import MainRender from "../../pages/main-render/main-render";
+import Main from '../../pages/main/main';
 
 
-function App(): JSX.Element {
+function App(props: { offersAmount: number }): JSX.Element {
   return (
-    <MainRender />
+    <Main offersAmount={props.offersAmount} />
   );
 }
 

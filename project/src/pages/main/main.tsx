@@ -1,6 +1,6 @@
-import CardRender from '../../components/card-render/card-render';
+import Card from '../../components/card/card';
 
-function MainRender(): JSX.Element{
+function Main(props: {offersAmount: number}): JSX.Element{
   return (
     <body className="page page--gray page--main">
 
@@ -73,7 +73,7 @@ function MainRender(): JSX.Element{
           <div className="cities__places-container container">
             <section className="cities__places places">
               <h2 className="visually-hidden">Places</h2>
-              <b className="places__found">312 places to stay in Amsterdam</b>
+              <b className="places__found">{props.offersAmount} places to stay in Amsterdam</b>
               <form className="places__sorting" action="#" method="get">
                 <span className="places__sorting-caption">Sort by</span>
                 <span className="places__sorting-type" tabIndex={0}>
@@ -91,11 +91,11 @@ function MainRender(): JSX.Element{
               </form>
               {/* List of Cards */}
               <div className="cities__places-list places__list tabs__content">
-                <CardRender />
-                <CardRender />
-                <CardRender />
-                <CardRender />
-                <CardRender />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
               </div>
             </section>
             <div className="cities__right-section">
@@ -108,5 +108,5 @@ function MainRender(): JSX.Element{
   );
 }
 
-export default MainRender;
+export default Main;
 

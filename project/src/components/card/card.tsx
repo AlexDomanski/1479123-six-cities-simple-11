@@ -1,5 +1,5 @@
-function CardRender(): JSX.Element{
-  return(
+export default function Card(): JSX.Element {
+  return (
     <article className="cities__card place-card">
       <div className="place-card__mark">
         <span>Premium</span>
@@ -31,5 +31,3 @@ function CardRender(): JSX.Element{
     </article>
   );
 }
-
-export default CardRender;
